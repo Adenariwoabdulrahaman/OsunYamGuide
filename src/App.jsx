@@ -73,7 +73,7 @@ function App() {
               onChange={handleDropdownChange}
               disabled={symptomInput.trim() !== ''}
             >
-              <option value="">Select symptom from list</option>
+              <option value=""style={{ color: "#888" }}>Select symptom from list</option>
               {symptomList.map((sym, i) => (
                 <option key={i} value={sym}>{sym}</option>
               ))}
